@@ -1,0 +1,884 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__EMU_HEADER
+00:0000 s__HEADERf
+00:0000 s__CABS
+00:0000 s__HEADER0
+00:0000 s__DABS
+00:0000 s__HEADER1
+00:0000 s__HEADER2
+00:0000 s__HEADER3
+00:0000 s__SFR1a
+00:0000 s__HEADER4
+00:0000 s__SFR2a
+00:0000 s__SFR1b
+00:0000 s__HEADER5
+00:0000 s__SFR2b
+00:0000 s__SFR1c
+00:0000 s__HEADER6
+00:0000 s__SFR2c
+00:0000 s__SFR1d
+00:0000 s__HEADER7
+00:0000 s__SFR2d
+00:0000 s__SFR1e
+00:0000 s__HEADER8
+00:0000 s__SFR2e
+00:0000 s__SFR1f
+00:0000 s__HEADER9
+00:0000 s__SFR2f
+00:0000 s__CALLHL_HEADER0
+00:0000 s__HRAM
+00:0000 s__HEADER
+00:0000 s__SFR10
+00:0000 s__SFRa
+00:0000 s__SFR20
+00:0000 s__SFR11
+00:0000 s__SFRb
+00:0000 s__SFR30
+00:0000 s__SFR21
+00:0000 s__SFR12
+00:0000 s__SFRc
+00:0000 s__SFR31
+00:0000 s__SFR22
+00:0000 s__SFR13
+00:0000 s__SFRd
+00:0000 s__SFR32
+00:0000 s__SFR23
+00:0000 s__SFR14
+00:0000 s__SFRe
+00:0000 s__SFR33
+00:0000 s__SFR24
+00:0000 s__SFR15
+00:0000 s__SFRf
+00:0000 .init
+00:0000 s__SFR34
+00:0000 s__SFR25
+00:0000 s__SFR16
+00:0000 s__SFR35
+00:0000 s__SFR26
+00:0000 s__SFR17
+00:0000 s__SFR36
+00:0000 s__SFR27
+00:0000 s__SFR18
+00:0000 s__SFR28
+00:0000 s__SFR19
+00:0000 s__SFR29
+00:0000 s__CALLHL_HEADER
+00:0000 s__SFR0
+00:0000 s__SFR1
+00:0000 s__SFR2
+00:0000 s__SFR3
+00:0000 s__EMU_HEADER0
+00:0000 s__SFR4
+00:0000 s__SFR5
+00:0000 s__SFR6
+00:0000 s__SFR7
+00:0000 s__SFR8
+00:0000 s__SFR9
+00:0000 s__HEADER10
+00:0000 s__HEADERa
+00:0000 s__SFR
+00:0000 s__HEADER11
+00:0000 s__HEADERb
+00:0000 s__HRAM13
+00:0000 s__HEADER12
+00:0000 s__HEADERc
+00:0000 s__HEADERd
+00:0000 s__HEADERe
+00:0200 s__CODE
+00:2D79 s__HOME
+00:2FCB s__BASE
+00:3210 s__LIT
+00:3210 s__GSINIT
+00:36E4 s__GSINITTAIL
+00:36E5 s__GSFINAL
+01:4000 s__CODE_1
+01:4000 s__CODE_4
+01:4000 s__CODE_5
+01:4000 s__CODE_6
+01:5C55 s__BSEG
+01:5C55 s__ISEG
+01:5C55 s__XSEG
+01:5C55 s__OVERLAY
+00:C000 .OAM
+00:C0A0 s__DATA
+00:CE30 s__BSS
+00:CE8A s__HEAP
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _main
+00:0207 _startFuncs
+00:0213 _updateFuncs
+00:021F _stateBanks
+00:0225 _UpdateActors
+00:04D0 _UpdateCamera
+00:060D _SetTile
+00:0624 _WaitForMode0Or1
+00:062D gbt_get_pattern_ptr
+00:064A _gbt_play
+00:0705 _gbt_pause
+00:0711 _gbt_loop
+00:0718 _gbt_stop
+00:0723 _gbt_enable_channels
+00:072A _gbt_update
+00:082F _ActorsInit
+00:086E _ActivateActor
+00:0882 _DeactivateActor
+00:0896 _DeactivateActiveActor
+00:092C _ActorAtTile
+00:094C _ActorAt1x2Tile
+00:096C _ActorAt1x3Tile
+00:098C _ActorAt3x1Tile
+00:09AC _ActorOverlapsPlayer
+00:09C3 _ActorInFrontOfActor
+00:09DA _CheckCollisionInDirection
+00:09FE _InitPlayer
+00:0A0C _ActorRunScript
+00:0A44 _ActorRunCollisionScripts
+00:0A52 _SetBankedBkgData
+00:0A75 _SetBankedSpriteData
+00:0A95 _ReadBankedUBYTE
+00:0AAB _ReadBankedBankPtr
+00:0AEE _MemcpyBanked
+00:0B11 _PushBank
+00:0B32 _PopBank
+00:0B60 _TileAt
+00:0BBB _TileAt2x1
+00:0C27 _TileAt2x2
+00:0CB3 _SetScene
+00:0CC2 _vbl_update
+00:0CF3 _lcd_update
+00:0D21 _core_start
+00:1000 _LoadTiles
+00:104C _LoadImage
+00:10FD _LoadImageAttr
+00:112D _LoadPalette
+00:117B _LoadUIPalette
+00:11C9 _LoadSpritePalette
+00:1217 _LoadPlayerSpritePalette
+00:1265 _LoadSprite
+00:12D4 _LoadScene
+00:1AB4 _FadeInit
+00:1ABD _fade_speeds
+00:1AC4 _FadeIn
+00:1AD2 _FadeOut
+00:1AE0 _FadeUpdate
+00:1AEE _ApplyPaletteChange
+00:1AFC _FadeSetSpeed
+00:1B0D _IsFading
+00:1B12 _HandleInputScripts
+00:1B8C _RemoveInputScripts
+00:1BCA _DespRight
+00:1BDF _Lt16
+00:1C0C _Gt16
+00:1C39 _SeedRand
+00:1C46 _MusicPlay
+00:1CB6 _MusicStop
+00:1CCA _MusicUpdate
+00:1CFE _SoundPlayTone
+00:1D35 _SoundStopTone
+00:1D3A _SoundPlayBeep
+00:1D5C _SoundPlayCrash
+00:1D7B _ProjectilesInit
+00:1D89 _WeaponAttack
+00:1DAE _ProjectileLaunch
+00:1DF0 _UpdateProjectiles
+00:1DFE _ScriptRunnerInit
+00:1E01 _ScriptStart
+00:1E3A _ScriptStartBg
+00:1F06 _ScriptRunnerUpdate
+00:2078 _ScriptTimerUpdate
+00:2086 _ScriptSaveCtx
+00:20D6 _ScriptRestoreCtx
+00:215F _ScriptCtxPoolNext
+00:2170 _ScriptCtxPoolReturn
+00:21B4 _ScriptCtxPoolReset
+00:21F2 _ScrollUpdateRowR
+00:2280 _ScrollUpdateRowWithDelay
+00:2370 _ScrollUpdateRow
+00:24BF _ScrollUpdateColumnR
+00:255C _ScrollUpdateColumnWithDelay
+00:2649 _RefreshScroll
+00:2657 _InitScroll
+00:2672 _RenderScreen
+00:2715 _SpritePoolReset
+00:2723 _SpritePoolReturn
+00:2737 _SpritePoolNext
+00:2748 _StackPush
+00:275A _StackPop
+00:2770 _StackShift
+00:27D9 _TriggerAtTile
+00:27F5 _TriggerRunScript
+00:2813 _ActivateTriggerAt
+00:2860 _UIInit
+00:2878 _UIUpdate
+00:2886 _UIReset
+00:2894 _UIDrawFrame
+00:28B5 _UIDrawDialogueFrame
+00:28C9 _UIShowText
+00:2908 _UIShowAvatar
+00:2A4C _UIShowChoice
+00:2A74 _UIShowMenu
+00:2A9E _UISetPos
+00:2AB5 _UIMoveTo
+00:2ADC _UIIsClosed
+00:2AF2 _UIOnInteract
+00:2B00 _UIAtDest
+00:2B1A _UISetColor
+00:2B30 _rand
+00:2B30 _randw
+00:2B5B _set_sprite_palette_entry
+00:2B60 _set_bkg_palette_entry
+00:2B63 .set_palette_entry
+00:2B7F _cpu_slow
+00:2B9A _cpu_fast
+00:2BA1 _cgb_compatibility
+00:2BE2 __divsuchar
+00:2BF1 __modsuchar
+00:2BFD __divuschar
+00:2C0F __moduschar
+00:2C1F __divschar
+00:2C2D __modschar
+00:2C39 __divsint
+00:2C4C __modsint
+00:2C5D __divuchar
+00:2C6B __moduchar
+00:2C77 __divuint
+00:2C8A __moduint
+00:2C9B .mod8
+00:2C9B .div8
+00:2CA3 .mod16
+00:2CA3 .div16
+00:2CD9 .modu8
+00:2CD9 .divu8
+00:2CDC .modu16
+00:2CDC .divu16
+00:2D1D __mulsuchar
+00:2D27 __muluschar
+00:2D31 __mulschar
+00:2D44 __muluchar
+00:2D51 __mulint
+; Area: _HEADER0
+; Area: _HEADER1
+; Area: _HEADER2
+; Area: _HEADER3
+; Area: _HEADER4
+; Area: _HEADER5
+; Area: _HEADER6
+; Area: _HEADER7
+; Area: _HEADER8
+; Area: _HEADER9
+; Area: _HEADERa
+; Area: _HEADERb
+; Area: _HEADERc
+; Area: _HEADERd
+; Area: _HEADERe
+; Area: _HEADERf
+; Area: _HEADER10
+; Area: _HEADER11
+00:01D0 _exit
+; Area: _HEADER12
+; Area: _HOME
+00:2D79 .set_mode
+00:2D89 .remove_VBL
+00:2D8F .remove_LCD
+00:2D95 .remove_TIM
+00:2D9B .remove_SIO
+00:2DA1 .remove_JOY
+00:2DA7 .add_VBL
+00:2DAD .add_LCD
+00:2DB3 .add_TIM
+00:2DB9 .add_SIO
+00:2DBF .add_JOY
+00:2DC5 .remove_int
+00:2DE4 .add_int
+00:2E00 .wait_vbl_done
+00:2E00 _wait_vbl_done
+00:2E17 _display_off
+00:2E17 .display_off
+00:2E38 .serial_IO
+00:2E67 _mode
+00:2E70 _get_mode
+00:2E75 _enable_interrupts
+00:2E77 _disable_interrupts
+00:2E79 _reset
+00:2E79 .reset
+00:2E7F _set_interrupts
+00:2E8A _remove_VBL
+00:2E95 _remove_LCD
+00:2EA0 _remove_TIM
+00:2EAB _remove_SIO
+00:2EB6 _remove_JOY
+00:2EC1 _add_VBL
+00:2ECC _add_LCD
+00:2ED7 _add_TIM
+00:2EE2 _add_SIO
+00:2EED _add_JOY
+00:2EF8 _clock
+00:2F01 __printTStates
+00:2F02 banked_call
+00:2F19 banked_ret
+00:2F21 _BGB_profiler_message
+00:2F69 _strcat
+00:2FAC _strlen
+; Area: _BASE
+00:2FCB .set_sprite_prop
+00:2FD8 _set_sprite_prop
+00:2FE3 _strcpy
+00:2FF5 _memcpy
+00:3015 _strcmp
+00:3039 _initrand
+00:303B .initrand
+00:3044 _set_sprite_palette
+00:3049 _set_bkg_palette
+00:304C .set_palette
+00:306B .mv_sprite
+00:307A _move_sprite
+00:3087 _set_win_tiles
+00:309B _set_win_data
+00:309B _set_bkg_data
+00:30A3 _set_sprite_data
+00:3119 .padup
+00:3119 _waitpadup
+00:3129 .jpad
+00:3156 .wait_pad
+00:315D _joypad
+00:3162 _waitpad
+00:316C .set_sprite_tile
+00:3179 _set_sprite_tile
+00:3184 .copy_vram
+00:3193 _get_data
+00:3193 _set_data
+00:31A6 .set_xy_wtt
+00:31B7 .set_xy_btt
+00:31C6 .set_xy_tt
+00:31F7 _set_tiles
+; Area: _LIT
+; Area: _GSINIT
+00:3210 gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+00:C0A2 gbt_playing
+00:C0A3 gbt_song
+00:C0A5 gbt_bank
+00:C0A6 gbt_speed
+00:C0A7 gbt_temp_play_data
+00:C0B3 gbt_loop_enabled
+00:C0B4 gbt_ticks_elapsed
+00:C0B5 gbt_current_step
+00:C0B6 gbt_current_pattern
+00:C0B7 gbt_current_step_data_ptr
+00:C0B9 gbt_channels_enabled
+00:C0BA gbt_pan
+00:C0BE gbt_vol
+00:C0C2 gbt_instr
+00:C0C6 gbt_freq
+00:C0CC gbt_channel3_loaded_instrument
+00:C0CD gbt_arpeggio_freq_index
+00:C0D6 gbt_arpeggio_enabled
+00:C0D9 gbt_arpeggio_tick
+00:C0DC gbt_cut_note_tick
+00:C0E0 gbt_have_to_stop_next_step
+00:C0E1 gbt_update_pattern_pointers
+00:C0E2 _actors
+00:C674 _actor_ptrs
+00:C6B2 _actors_active
+00:C6BD _actors_active_size
+00:C6BE _actor_move_settings
+00:C6BF _map_next_pos
+00:C6C3 _map_next_dir
+00:C6C5 _map_next_sprite
+00:C6C7 _player_iframes
+00:C6C8 _actors_active_delete
+00:C6D3 _actors_active_delete_count
+00:C6D4 _bank_stack
+00:C6DF _camera_pos
+00:C6E3 _camera_dest
+00:C6E7 _camera_offset
+00:C6E9 _camera_speed
+00:C6EA _camera_settings
+00:C6EB _camera_deadzone
+00:C6ED _game_time
+00:C6EE _next_state
+00:C6F0 _delta_time
+00:C6F1 _current_state
+00:C6F3 _state_running
+00:C6F4 _vbl_count
+00:C6F5 _old_scroll_x
+00:C6F7 _old_scroll_y
+00:C6F9 _music_mute_frames
+00:C6FA _bank_ptr
+00:C6FD _image_bank
+00:C6FE _image_attr_bank
+00:C6FF _collision_bank
+00:C700 _image_ptr
+00:C702 _image_attr_ptr
+00:C704 _collision_ptr
+00:C706 _image_tile_width
+00:C707 _image_tile_height
+00:C708 _image_width
+00:C70A _image_height
+00:C70C _sprites_len
+00:C70D _actors_len
+00:C70E _scene_type
+00:C70F _scene_events_start_ptr
+00:C712 _fade_running
+00:C713 _fade_frames_per_step
+00:C717 _joy
+00:C718 _last_joy
+00:C719 _recent_joy
+00:C71A _await_input
+00:C71B _input_wait
+00:C71C _input_script_ptrs
+00:C734 _input_script_persist
+00:C735 _current_index
+00:C736 _tone_frames
+00:C737 _SprPalette
+00:C777 _BkgPalette
+00:C7B7 _projectiles
+00:C825 _current_projectile
+00:C826 _script_ctx_pool
+00:C832 _active_script_ctx
+00:C84A _script_main_ctx_actor
+00:C84B _script_cmd_args
+00:C852 _script_cmd_args_len
+00:C853 _script_stack_ptr
+00:C854 _script_stack
+00:C864 _script_bank_stack
+00:C86C _script_start_stack
+00:C87C _script_ctxs
+00:C99C _active_script_ctx_index
+00:C99D _script_ctx_ptr
+00:C99F _timer_script_duration
+00:C9A0 _timer_script_time
+00:C9A1 _timer_script_ptr
+00:C9A4 _ctx_cmd_remaining
+00:C9A5 _RAMPtr
+00:C9A7 _scene_stack_ptr
+00:C9A8 _scene_stack
+00:C9E8 _emote_timer
+00:C9E9 _shake_time
+00:C9EA _after_lock_camera
+00:C9EB _tmp_actor
+00:C9ED _scroll_x
+00:C9EF _scroll_y
+00:C9F1 _draw_scroll_x
+00:C9F3 _scroll_x_max
+00:C9F5 _scroll_y_max
+00:C9F7 _scroll_offset_x
+00:C9F9 _pending_h_x
+00:C9FB _pending_h_y
+00:C9FD _pending_h_i
+00:C9FE _pending_h_map
+00:CA00 _pending_w_map
+00:CA02 _pending_w_x
+00:CA04 _pending_w_y
+00:CA06 _pending_w_i
+00:CA07 _scroll_target
+00:CA09 _sprites_info
+00:CA54 _sprite_pool
+00:CA68 _hide_sprites
+00:CA69 _sprite_active_pool
+00:CA7C _sprite_active_pool_size
+00:CA7D _triggers
+00:CB56 _triggers_active
+00:CB61 _triggers_active_size
+00:CB62 _triggers_len
+00:CB63 _last_trigger_tx
+00:CB64 _last_trigger_ty
+00:CB65 _ui_block
+00:CB66 _win_pos_x
+00:CB67 _win_pos_y
+00:CB68 _win_dest_pos_x
+00:CB69 _win_dest_pos_y
+00:CB6A _win_speed
+00:CB6B _text_x
+00:CB6C _text_y
+00:CB6D _text_drawn
+00:CB6E _text_count
+00:CB6F _text_tile_count
+00:CB70 _text_wait
+00:CB71 _text_in_speed
+00:CB72 _text_out_speed
+00:CB73 _text_draw_speed
+00:CB74 _text_ff_joypad
+00:CB75 _tmp_text_in_speed
+00:CB76 _tmp_text_out_speed
+00:CB77 _text_num_lines
+00:CB78 _avatar_enabled
+00:CB79 _menu_enabled
+00:CB7A _menu_index
+00:CB7B _menu_flag
+00:CB7D _menu_num_options
+00:CB7E _menu_cancel_on_last_option
+00:CB7F _menu_cancel_on_b
+00:CB80 _menu_layout
+00:CB81 _text_lines
+00:CBD1 _tmp_text_lines
+00:CC21 _current_text_speed
+00:CC22 _grounded
+00:CC23 _on_ladder
+00:CC24 _pl_vel_x
+00:CC26 _pl_vel_y
+00:CC28 _pl_pos_x
+00:CC2A _pl_pos_y
+00:CC2C _last_hit_trigger
+00:CC2D _shooter_horizontal
+00:CC2E _shooter_direction
+00:CC2F _shooter_reached_end
+00:CC30 _start_scene_index
+00:CC32 _start_scene_x
+00:CC34 _start_scene_y
+00:CC36 _start_scene_dir_x
+00:CC37 _start_scene_dir_y
+00:CC38 _start_player_sprite
+00:CC3A _start_player_move_speed
+00:CC3B _start_player_anim_speed
+00:CC3C _script_variables
+; Area: _BSS
+00:CE30 __cpu
+00:CE31 .mode
+00:CE32 __io_out
+00:CE33 __io_in
+00:CE34 __io_status
+00:CE35 .vbl_done
+00:CE36 _sys_time
+00:CE36 .sys_time
+00:CE38 .int_0x40
+00:CE48 .int_0x48
+00:CE58 .int_0x50
+00:CE68 .int_0x58
+00:CE78 .int_0x60
+00:CE88 .randhi
+00:CE89 .randlo
+; Area: _HEAP
+00:CE8A _malloc_heap_start
+; Area: _HRAM13
+00:FF90 __current_bank
+; Area: _CODE_1
+01:412C gbt_channel_1_handle
+01:4283 gbt_channel_2_handle
+01:43D6 gbt_channel_3_handle
+01:4548 gbt_channel_4_handle
+01:4638 gbt_update_bank1
+01:4654 gbt_update_effects_bank1
+01:4671 _ActivateActor_b
+01:476A _DeactivateActor_b
+01:480B _ActorInFrontOfActor_b
+01:492C _CheckCollisionInDirection_b
+01:4A89 _ActorAtTile_b
+01:4B79 _ActorAt1x2Tile_b
+01:4C36 _ActorAt1x3Tile_b
+01:4D15 _ActorAt3x1Tile_b
+01:4DF7 _ActorOverlapsPlayer_b
+01:4F2A _InitPlayer_b
+01:4FFD _ActorRunCollisionScripts_b
+01:50D8 _UpdateColor
+01:51A0 _ApplyPaletteChangeColor
+01:52AF _ApplyPaletteChangeDMG
+01:52CC _FadeIn_b
+01:52E8 _FadeOut_b
+01:5304 _FadeUpdate_b
+01:5347 _ApplyPaletteChange_b
+01:5350 _ProjectilesInit_b
+01:538F _WeaponAttack_b
+01:5737 _ProjectileLaunch_b
+01:59C6 _UpdateProjectiles_b
+01:6091 _RefreshScroll_b
+01:62AD _SpritePoolReset_b
+01:62F8 _SpritePoolReturn_b
+01:637D _SpritePoolNext_b
+01:639A _TriggerAtTile_b
+01:644F _UIInit_b
+01:64A8 _ui_frame_tl_tiles
+01:64A9 _ui_frame_bl_tiles
+01:64AA _ui_frame_tr_tiles
+01:64AB _ui_frame_br_tiles
+01:64AC _ui_frame_t_tiles
+01:64AD _ui_frame_b_tiles
+01:64AE _ui_frame_l_tiles
+01:64AF _ui_frame_r_tiles
+01:64B0 _ui_frame_bg_tiles
+01:64B1 _ui_colors
+01:6781 _ui_white
+01:6791 _ui_black
+01:67A1 _ui_cursor_tiles
+01:67A2 _ui_bg_tiles
+01:67A3 _win_tiles
+01:690B _text_draw_speeds
+01:6911 _UIReset_b
+01:691E _UIUpdate_b
+01:69C9 _UIDrawFrame_b
+01:6BAD _UIDrawDialogueFrame_b
+01:6BC2 _UISetColor_b
+01:6C5B _UIShowText_b
+01:6FFC _UIDrawTextBufferChar_b
+01:7244 _UICloseDialogue_b
+01:728E _UIOnInteract_b
+01:74A7 _UIShowMenu_b
+01:74FB _UIDrawMenuCursor_b
+; Area: _CODE_4
+01:4000 _ScriptTimerUpdate_b
+01:4040 _emote_offsets
+01:4078 _script_cmds
+01:41B3 _ScriptUpdate_MoveActor
+01:44A5 _ScriptUpdate_MoveActorDiag
+01:475E _ScriptUpdate_AwaitFade
+01:476C _ScriptUpdate_AwaitUIClosed
+01:476F _ScriptUpdate_AwaitUIAtDest
+01:4772 _ScriptUpdate_AwaitInputPres
+01:4791 _ScriptUpdate_Wait
+01:47A0 _ScriptUpdate_Emote
+01:4876 _ScriptUpdate_MoveCamera
+01:497D _ScriptUpdate_CamShake
+01:49A6 _Script_Noop_b
+01:49A7 _Script_End_b
+01:49B3 _Script_Text_b
+01:49E1 _Script_Goto_b
+01:4A0C _Script_IfFlag_b
+01:4A57 _Script_IfValue_b
+01:4B1D _Script_SetFlag_b
+01:4B40 _Script_ClearFlag_b
+01:4B63 _Script_ActorSetDir_b
+01:4BF9 _Script_ActorActivate_b
+01:4C0E _Script_CameraMoveTo_b
+01:4C97 _Script_CameraLock_b
+01:4D03 _ScriptHelper_ClampCamDest
+01:4E56 _Script_Wait_b
+01:4E66 _Script_FadeOut_b
+01:4E7B _Script_FadeIn_b
+01:4E90 _Script_LoadScene_b
+01:4F36 _Script_ActorSetPos_b
+01:4F98 _Script_ActorMoveTo_b
+01:5049 _ScriptHelper_CalcDest
+01:5391 _Script_ShowSprites_b
+01:539D _Script_HideSprites_b
+01:53A9 _Script_ActorShow_b
+01:53D3 _Script_ActorHide_b
+01:53FD _Script_ActorSetCollisions_b
+01:5420 _Script_ActorSetEmote_b
+01:54BC _Script_CameraShake_b
+01:54CD _Script_ShowOverlay_b
+01:54ED _Script_HideOverlay_b
+01:54FA _Script_OverlaySetPos_b
+01:5511 _Script_OverlayMoveTo_b
+01:5538 _Script_AwaitInput_b
+01:5549 _Script_MusicPlay_b
+01:5560 _Script_MusicStop_b
+01:5569 _Script_ResetVariables_b
+01:5586 _Script_NextFrame_b
+01:558C _Script_IncFlag_b
+01:55B4 _Script_DecFlag_b
+01:55DD _Script_SetFlagValue_b
+01:5602 _Script_SetFlagProperty_b
+01:570E _Script_IfInput_b
+01:5742 _Script_Choice_b
+01:5793 _Script_TextMenu_b
+01:5801 _Script_PlayerBounce_b
+01:5829 _Script_ActorSetSprite_b
+01:592F _Script_PlayerSetSprite_b
+01:59B7 _Script_ActorPush_b
+01:5B1E _Script_IfActorPos_b
+01:5B9C _Script_SaveData_b
+01:5CCF _Script_LoadData_b
+01:5E35 _Script_ClearData_b
+01:5E4C _Script_IfSavedData_b
+01:5E96 _Script_IfActorDirection_b
+01:5F15 _Script_IfActorRelActor_b
+01:610C _Script_SetFlagRandomValue_b
+01:615A _Script_ActorGetPos_b
+01:61D2 _Script_ActorSetPosToVal_b
+01:628A _Script_ActorMoveToVal_b
+01:636E _Script_ActorMoveRel_b
+01:6587 _Script_ActorSetPosRel_b
+01:66B0 _Script_MathAdd_b
+01:66DA _Script_MathSub_b
+01:670B _Script_MathMul_b
+01:6741 _Script_MathDiv_b
+01:6777 _Script_MathMod_b
+01:67AD _Script_MathAddVal_b
+01:67D9 _Script_MathSubVal_b
+01:6806 _Script_MathMulVal_b
+01:683B _Script_MathDivVal_b
+01:6870 _Script_MathModVal_b
+01:68A5 _Script_CopyVal_b
+01:68C8 _Script_IfValueCompare_b
+01:6972 _Script_LoadVectors_b
+01:69AF _Script_ActorSetMoveSpeed_b
+01:69D0 _Script_ActorSetAnimSpeed_b
+01:69F3 _Script_TextSetAnimSpeed_b
+01:6A1E _Script_ActorInvoke_b
+01:6A62 _Script_StackPush_b
+01:6AEA _Script_StackPop_b
+01:6B2F _Script_ScenePushState_b
+01:6C4B _Script_ScenePopState_b
+01:6D47 _Script_SceneResetStack_b
+01:6D4D _Script_ScenePopAllState_b
+01:6E36 _Script_SetInputScript_b
+01:6E95 _Script_RemoveInputScript_b
+01:6EC9 _Script_ActorSetFrame_b
+01:6F4B _Script_ActorSetFrameToVal_b
+01:6FEB _Script_ActorSetFlip_b
+01:6FEC _Script_TextMulti_b
+01:7039 _Script_VariableAddFlags_b
+01:7063 _Script_VariableClearFlags_b
+01:708E _Script_SoundPlayTone_b
+01:70BC _Script_SoundStopTone_b
+01:70BF _Script_SoundPlayBeep_b
+01:70C9 _Script_SoundPlayCrash_b
+01:70CC _Script_SetTimerScript_b
+01:7102 _Script_ResetTimer_b
+01:710D _Script_RemoveTimerScript_b
+01:7113 _Script_TextWithAvatar_b
+01:714F _Script_LaunchProjectile_b
+01:7286 _Script_WeaponAttack_b
+01:72D8 _Script_PalSetBackground_b
+01:72FC _Script_PalSetSprite_b
+01:7320 _Script_PalSetUI_b
+01:7344 _Script_ActorStopUpdate_b
+01:739C _Script_ActorSetAnimate_b
+; Area: _CODE_5
+01:4000 _Start_Adventure
+01:4015 _Update_Adventure
+01:454B _Start_Platform
+01:4615 _Update_Platform
+01:503F _Start_PointNClick
+01:5068 _Update_PointNClick
+01:52DA _Start_Shmup
+01:536A _Update_Shmup
+01:5897 _Start_TopDown
+01:58AC _Update_TopDown
+01:5C22 _tileset_bank_ptrs
+01:5C25 _background_bank_ptrs
+01:5C28 _background_attr_bank_ptrs
+01:5C2E _palette_bank_ptrs
+01:5C31 _sprite_bank_ptrs
+01:5C40 _scene_bank_ptrs
+01:5C46 _collision_bank_ptrs
+01:5C4C _avatar_bank_ptrs
+01:5C4F _music_tracks
+01:5C53 _music_banks
+; Area: _OVERLAY
+; Area: _ISEG
+; Area: _BSEG
+; Area: _XSEG
+; Area: _CODE_6
+01:4000 _bank_6_data
+; Area: _SFR0
+00:FF00 _P1_REG
+; Area: _SFR1
+00:FF01 _SB_REG
+; Area: _SFR2
+00:FF02 _SC_REG
+; Area: _SFR3
+00:FF04 _DIV_REG
+; Area: _SFR4
+00:FF05 _TIMA_REG
+; Area: _SFR5
+00:FF06 _TMA_REG
+; Area: _SFR6
+00:FF07 _TAC_REG
+; Area: _SFR7
+00:FF0F _IF_REG
+; Area: _SFR8
+00:FF10 _NR10_REG
+; Area: _SFR9
+00:FF11 _NR11_REG
+; Area: _SFRa
+00:FF12 _NR12_REG
+; Area: _SFRb
+00:FF13 _NR13_REG
+; Area: _SFRc
+00:FF14 _NR14_REG
+; Area: _SFRd
+00:FF16 _NR21_REG
+; Area: _SFRe
+00:FF17 _NR22_REG
+; Area: _SFRf
+00:FF18 _NR23_REG
+; Area: _SFR10
+00:FF19 _NR24_REG
+; Area: _SFR11
+00:FF1A _NR30_REG
+; Area: _SFR12
+00:FF1B _NR31_REG
+; Area: _SFR13
+00:FF1C _NR32_REG
+; Area: _SFR14
+00:FF1D _NR33_REG
+; Area: _SFR15
+00:FF1E _NR34_REG
+; Area: _SFR16
+00:FF20 _NR41_REG
+; Area: _SFR17
+00:FF21 _NR42_REG
+; Area: _SFR18
+00:FF22 _NR43_REG
+; Area: _SFR19
+00:FF23 _NR44_REG
+; Area: _SFR1a
+00:FF24 _NR50_REG
+; Area: _SFR1b
+00:FF25 _NR51_REG
+; Area: _SFR1c
+00:FF26 _NR52_REG
+; Area: _SFR1d
+00:FF40 _LCDC_REG
+; Area: _SFR1e
+00:FF41 _STAT_REG
+; Area: _SFR1f
+00:FF42 _SCY_REG
+; Area: _SFR20
+00:FF43 _SCX_REG
+; Area: _SFR21
+00:FF44 _LY_REG
+; Area: _SFR22
+00:FF45 _LYC_REG
+; Area: _SFR23
+00:FF46 _DMA_REG
+; Area: _SFR24
+00:FF47 _BGP_REG
+; Area: _SFR25
+00:FF48 _OBP0_REG
+; Area: _SFR26
+00:FF49 _OBP1_REG
+; Area: _SFR27
+00:FF4A _WY_REG
+; Area: _SFR28
+00:FF4B _WX_REG
+; Area: _SFR29
+00:FF4D _KEY1_REG
+; Area: _SFR2a
+00:FF4F _VBK_REG
+; Area: _SFR2b
+00:FF51 _HDMA1_REG
+; Area: _SFR2c
+00:FF52 _HDMA2_REG
+; Area: _SFR2d
+00:FF53 _HDMA3_REG
+; Area: _SFR2e
+00:FF54 _HDMA4_REG
+; Area: _SFR2f
+00:FF55 _HDMA5_REG
+; Area: _SFR30
+00:FF56 _RP_REG
+; Area: _SFR31
+00:FF68 _BCPS_REG
+; Area: _SFR32
+00:FF69 _BCPD_REG
+; Area: _SFR33
+00:FF6A _OCPS_REG
+; Area: _SFR34
+00:FF6B _OCPD_REG
+; Area: _SFR35
+00:FF70 _SVBK_REG
+; Area: _SFR36
+00:FFFF _IE_REG
+; Area: _EMU_HEADER0
+; Area: _CALLHL_HEADER0
+00:0020 ___sdcc_call_hl
+; Area: .  .ABS.
+00:0000 .__.ABS.
