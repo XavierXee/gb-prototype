@@ -1745,9 +1745,9 @@
                         "variable": "L0",
                         "value": {
                             "type": "number",
-                            "value": 1
+                            "value": 3
                         },
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -1757,7 +1757,7 @@
                         "variable": "L1",
                         "value": {
                             "type": "number",
-                            "value": 3
+                            "value": 1
                         },
                         "__collapse": true
                     }
@@ -1765,7 +1765,9 @@
                 {
                     "id": "04da12f0-8023-4669-bec6-23986f0646de",
                     "command": "EVENT_LOOP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true
+                    },
                     "children": {
                         "true": [
                             {
@@ -1774,7 +1776,7 @@
                                 "args": {
                                     "variable": "L1",
                                     "choices": 2,
-                                    "__collapseCase0": true,
+                                    "__collapseCase0": false,
                                     "value0": 1,
                                     "__collapseCase1": true,
                                     "value1": 2,
@@ -1807,7 +1809,7 @@
                                     "__collapseCase15": false,
                                     "value15": 16,
                                     "__collapseElse": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true0": [
@@ -1829,12 +1831,12 @@
                                                         "args": {
                                                             "variable": "0",
                                                             "choices": 3,
-                                                            "__collapseCase0": false,
-                                                            "value0": 1,
-                                                            "__collapseCase1": false,
-                                                            "value1": 2,
-                                                            "__collapseCase2": false,
-                                                            "value2": 3,
+                                                            "__collapseCase0": true,
+                                                            "value0": 0,
+                                                            "__collapseCase1": true,
+                                                            "value1": 1,
+                                                            "__collapseCase2": true,
+                                                            "value2": 2,
                                                             "__collapseCase3": false,
                                                             "value3": 4,
                                                             "__collapseCase4": false,
@@ -1862,7 +1864,7 @@
                                                             "__collapseCase15": false,
                                                             "value15": 16,
                                                             "__collapseElse": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "children": {
                                                             "true0": [
@@ -1881,7 +1883,7 @@
                                                                         },
                                                                         "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -1889,7 +1891,7 @@
                                                                     "command": "EVENT_WAIT",
                                                                     "args": {
                                                                         "time": 0.4,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -1905,7 +1907,7 @@
                                                                             "type": "number",
                                                                             "value": 20
                                                                         },
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -1923,7 +1925,7 @@
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": false,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2000,8 +2002,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2033,11 +2035,11 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 22
                                                                         },
-                                                                        "moveType": "vertical",
+                                                                        "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2059,9 +2061,9 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 0
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2077,9 +2079,9 @@
                                                                             "type": "property",
                                                                             "value": "1:ypos"
                                                                         },
-                                                                        "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "moveType": "vertical",
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2091,7 +2093,7 @@
                                                                             "type": "direction",
                                                                             "value": "down"
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2185,15 +2187,15 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 0
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 11
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2211,13 +2213,13 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 22
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 11
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2234,8 +2236,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2288,12 +2290,12 @@
                                                         "args": {
                                                             "variable": "0",
                                                             "choices": 3,
-                                                            "__collapseCase0": false,
-                                                            "value0": 1,
-                                                            "__collapseCase1": false,
-                                                            "value1": 2,
-                                                            "__collapseCase2": false,
-                                                            "value2": 3,
+                                                            "__collapseCase0": true,
+                                                            "value0": 0,
+                                                            "__collapseCase1": true,
+                                                            "value1": 1,
+                                                            "__collapseCase2": true,
+                                                            "value2": 2,
                                                             "__collapseCase3": false,
                                                             "value3": 4,
                                                             "__collapseCase4": false,
@@ -2321,7 +2323,7 @@
                                                             "__collapseCase15": false,
                                                             "value15": 16,
                                                             "__collapseElse": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "children": {
                                                             "true0": [
@@ -2340,7 +2342,7 @@
                                                                         },
                                                                         "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2348,7 +2350,7 @@
                                                                     "command": "EVENT_WAIT",
                                                                     "args": {
                                                                         "time": 0.4,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2364,7 +2366,7 @@
                                                                             "type": "number",
                                                                             "value": 20
                                                                         },
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2382,7 +2384,7 @@
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": false,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2459,8 +2461,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2492,11 +2494,11 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 22
                                                                         },
-                                                                        "moveType": "vertical",
+                                                                        "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2518,9 +2520,9 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 0
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2536,9 +2538,9 @@
                                                                             "type": "property",
                                                                             "value": "1:ypos"
                                                                         },
-                                                                        "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "moveType": "vertical",
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2550,7 +2552,7 @@
                                                                             "type": "direction",
                                                                             "value": "down"
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2644,15 +2646,15 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 0
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 11
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2670,13 +2672,13 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 22
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 11
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2693,8 +2695,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -2831,12 +2833,12 @@
                                                         "args": {
                                                             "variable": "0",
                                                             "choices": 3,
-                                                            "__collapseCase0": false,
-                                                            "value0": 1,
-                                                            "__collapseCase1": false,
-                                                            "value1": 2,
-                                                            "__collapseCase2": false,
-                                                            "value2": 3,
+                                                            "__collapseCase0": true,
+                                                            "value0": 0,
+                                                            "__collapseCase1": true,
+                                                            "value1": 1,
+                                                            "__collapseCase2": true,
+                                                            "value2": 2,
                                                             "__collapseCase3": false,
                                                             "value3": 4,
                                                             "__collapseCase4": false,
@@ -2864,7 +2866,7 @@
                                                             "__collapseCase15": false,
                                                             "value15": 16,
                                                             "__collapseElse": false,
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "children": {
                                                             "true0": [
@@ -2883,7 +2885,7 @@
                                                                         },
                                                                         "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2891,7 +2893,7 @@
                                                                     "command": "EVENT_WAIT",
                                                                     "args": {
                                                                         "time": 0.4,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2907,7 +2909,7 @@
                                                                             "type": "number",
                                                                             "value": 20
                                                                         },
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -2925,7 +2927,7 @@
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": false,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     }
                                                                 },
                                                                 {
@@ -3002,8 +3004,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3035,11 +3037,11 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 22
                                                                         },
-                                                                        "moveType": "vertical",
+                                                                        "moveType": "horizontal",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3061,9 +3063,9 @@
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 0
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3079,9 +3081,9 @@
                                                                             "type": "property",
                                                                             "value": "1:ypos"
                                                                         },
-                                                                        "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "moveType": "vertical",
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3093,7 +3095,7 @@
                                                                             "type": "direction",
                                                                             "value": "down"
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3187,15 +3189,15 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 0
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 0
+                                                                            "value": 11
                                                                         },
                                                                         "moveType": "vertical",
                                                                         "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3213,13 +3215,13 @@
                                                                         "actorId": "0",
                                                                         "x": {
                                                                             "type": "number",
-                                                                            "value": 11
+                                                                            "value": 22
                                                                         },
                                                                         "y": {
                                                                             "type": "number",
-                                                                            "value": 22
+                                                                            "value": 11
                                                                         },
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3236,8 +3238,8 @@
                                                                             "value": "1:ypos"
                                                                         },
                                                                         "moveType": "horizontal",
-                                                                        "useCollisions": true,
-                                                                        "__collapse": true
+                                                                        "useCollisions": false,
+                                                                        "__collapse": false
                                                                     }
                                                                 },
                                                                 {
@@ -3289,7 +3291,7 @@
                                     "operator": "==",
                                     "comparator": 4,
                                     "__collapseElse": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -3336,7 +3338,7 @@
             "y": 146,
             "actors": [
                 {
-                    "spriteSheetId": "f51a636a-a729-4838-a581-ee8be6588ee7",
+                    "spriteSheetId": "39d06f2b-8e75-4d5e-9643-d11ae77ac6e9",
                     "spriteType": "actor",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -3490,6 +3492,16 @@
             "_v": 1601755257755
         },
         {
+            "id": "c8d71c4c-fcc9-4f84-bf6b-162db7fff868",
+            "name": "tile-good",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "tile-good.png",
+            "_v": 1601767605850
+        },
+        {
             "id": "9fc2b045-54ca-48ae-9cad-51a7e33be5cd",
             "name": "tile",
             "width": 20,
@@ -3507,7 +3519,7 @@
             "imageWidth": 192,
             "imageHeight": 176,
             "filename": "tile2.png",
-            "_v": 1601755257755
+            "_v": 1601768333051
         }
     ],
     "spriteSheets": [
@@ -3542,6 +3554,14 @@
             "type": "static",
             "filename": "blank.png",
             "_v": 1601755257757
+        },
+        {
+            "id": "39d06f2b-8e75-4d5e-9643-d11ae77ac6e9",
+            "name": "chara1",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "chara1.png",
+            "_v": 1601769353613
         },
         {
             "id": "acc31d5e-38ba-4385-b6f7-3130a13f5f75",
@@ -4445,7 +4465,7 @@
         {
             "id": "7358830c-3f91-4402-9ff9-a3ec54d98a26",
             "name": "Move Actor",
-            "description": "1 Top | 2 Right | 3 Bottom | 4 Left\n",
+            "description": "0 Top | 1 Right | 2 Bottom | 3 Left\n",
             "variables": {
                 "0": {
                     "id": "0",
@@ -4469,12 +4489,12 @@
                     "args": {
                         "variable": "0",
                         "choices": 3,
-                        "__collapseCase0": false,
-                        "value0": 1,
-                        "__collapseCase1": false,
-                        "value1": 2,
-                        "__collapseCase2": false,
-                        "value2": 3,
+                        "__collapseCase0": true,
+                        "value0": 0,
+                        "__collapseCase1": true,
+                        "value1": 1,
+                        "__collapseCase2": true,
+                        "value2": 2,
                         "__collapseCase3": false,
                         "value3": 4,
                         "__collapseCase4": false,
@@ -4502,7 +4522,7 @@
                         "__collapseCase15": false,
                         "value15": 16,
                         "__collapseElse": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true0": [
@@ -4521,7 +4541,7 @@
                                     },
                                     "moveType": "horizontal",
                                     "useCollisions": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -4529,7 +4549,7 @@
                                 "command": "EVENT_WAIT",
                                 "args": {
                                     "time": 0.4,
-                                    "__collapse": false
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -4545,7 +4565,7 @@
                                         "type": "number",
                                         "value": 20
                                     },
-                                    "__collapse": false
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -4563,7 +4583,7 @@
                                     },
                                     "moveType": "vertical",
                                     "useCollisions": false,
-                                    "__collapse": false
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -4640,8 +4660,8 @@
                                         "value": "1:ypos"
                                     },
                                     "moveType": "horizontal",
-                                    "useCollisions": true,
-                                    "__collapse": true
+                                    "useCollisions": false,
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4673,11 +4693,11 @@
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 0
+                                        "value": 22
                                     },
-                                    "moveType": "vertical",
+                                    "moveType": "horizontal",
                                     "useCollisions": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4699,9 +4719,9 @@
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 22
+                                        "value": 0
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4717,9 +4737,9 @@
                                         "type": "property",
                                         "value": "1:ypos"
                                     },
-                                    "moveType": "horizontal",
-                                    "useCollisions": true,
-                                    "__collapse": true
+                                    "moveType": "vertical",
+                                    "useCollisions": false,
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4731,7 +4751,7 @@
                                         "type": "direction",
                                         "value": "down"
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4825,15 +4845,15 @@
                                     "actorId": "0",
                                     "x": {
                                         "type": "number",
-                                        "value": 11
+                                        "value": 0
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 0
+                                        "value": 11
                                     },
                                     "moveType": "vertical",
                                     "useCollisions": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4851,13 +4871,13 @@
                                     "actorId": "0",
                                     "x": {
                                         "type": "number",
-                                        "value": 11
+                                        "value": 22
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 22
+                                        "value": 11
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4874,8 +4894,8 @@
                                         "value": "1:ypos"
                                     },
                                     "moveType": "horizontal",
-                                    "useCollisions": true,
-                                    "__collapse": true
+                                    "useCollisions": false,
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -4978,7 +4998,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 714,
-        "worldScrollY": 235,
+        "worldScrollY": 111,
         "zoom": 206.0672483369708,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [
